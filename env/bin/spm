@@ -1,0 +1,11 @@
+#!/Users/Sova/dtpayspgw_python/env/bin/python
+
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from salt.scripts import salt_spm
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(salt_spm())
